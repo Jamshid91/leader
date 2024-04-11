@@ -752,7 +752,7 @@ input, textarea, select, button,
   height: 235px;
 }
 
-.main .map-img {
+.main .map-box {
   width: 100%;
   height: 366px;
   -webkit-border-radius: 20px;
@@ -760,6 +760,13 @@ input, textarea, select, button,
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: -180px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.main .map-box iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .main .info-title {
@@ -883,6 +890,15 @@ input, textarea, select, button,
 .main .smu-card-bg {
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .smu-card:hover .smu-card-bg {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .main .smu-card__link {
@@ -930,13 +946,23 @@ input, textarea, select, button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
 }
 
 .main .metrology .metrology-photos .big-photo {
   height: 545px;
   position: relative;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
+}
+
+.main .metrology .metrology-photos .big-photo:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .metrology .metrology-photos .small-photos {
@@ -952,17 +978,23 @@ input, textarea, select, button,
   position: relative;
   height: 168px;
   cursor: pointer;
+  border: 3px solid transparent;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
 }
 
-.main .metrology .metrology-photos .small-photo img {
-  border: 3px solid transparent;
+.main .metrology .metrology-photos .small-photo:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .metrology .metrology-photos .small-photo .zoom {
   display: none;
 }
 
-.main .metrology .metrology-photos .small-photo.active img {
+.main .metrology .metrology-photos .small-photo.active {
   border-color: #009BF7;
 }
 
@@ -985,15 +1017,25 @@ input, textarea, select, button,
   width: 100%;
   height: 545px;
   margin-top: 50px;
+  overflow: hidden;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
 }
 
 .main .apcs .apcs-photo img {
   width: 100%;
   height: 100%;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .apcs .apcs-photo:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .apcs-box {
@@ -1015,13 +1057,23 @@ input, textarea, select, button,
 
 .main .apcs-box .apcs-pdf {
   height: 358px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
 }
 
 .main .apcs-box .apcs-pdf img {
   width: 100%;
   height: 100%;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .apcs-box .apcs-pdf:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .apcs-box .apcs-pdf__btn {
@@ -1129,6 +1181,9 @@ input, textarea, select, button,
   width: 100%;
   height: 545px;
   margin-top: 50px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
 }
 
 .main .diagnostics .diagnostics-photo img,
@@ -1137,10 +1192,20 @@ input, textarea, select, button,
 .main .design .design-photo img {
   width: 100%;
   height: 100%;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .diagnostics .diagnostics-photo:hover img,
+.main .diagnostics .design-photo:hover img,
+.main .design .diagnostics-photo:hover img,
+.main .design .design-photo:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .diagnostics-box,
@@ -1166,14 +1231,25 @@ input, textarea, select, button,
 .main .design-box .diagnostics-pdf {
   height: 358px;
   width: 49%;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
 }
 
 .main .diagnostics-box .diagnostics-pdf img,
 .main .design-box .diagnostics-pdf img {
   width: 100%;
   height: 100%;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .diagnostics-box .diagnostics-pdf:hover img,
+.main .design-box .diagnostics-pdf:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .diagnostics-box .diagnostics-pdf__btn,
@@ -1254,15 +1330,25 @@ input, textarea, select, button,
 .main .connection .connection-box .connection-photo {
   width: 49%;
   height: 545px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
 }
 
 .main .connection .connection-box .connection-photo img {
   width: 100%;
   height: 100%;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .connection .connection-box .connection-photo:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .wrapper-design,
@@ -1316,6 +1402,18 @@ input, textarea, select, button,
   overflow: hidden;
   padding: 30px;
   overflow: hidden;
+}
+
+.main .saving-card .saving-card-img {
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .saving-card:hover .saving-card-img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .saving-card-bg {
@@ -1378,6 +1476,9 @@ input, textarea, select, button,
 .main .saving .big-photo {
   height: 545px;
   position: relative;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
 }
 
 .main .saving .big-photo img {
@@ -1385,8 +1486,15 @@ input, textarea, select, button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .saving .big-photo:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .saving .small-photos {
@@ -1402,6 +1510,10 @@ input, textarea, select, button,
   position: relative;
   height: 178px;
   cursor: pointer;
+  border: 3px solid transparent;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
 }
 
 .main .saving .small-photo img {
@@ -1409,19 +1521,22 @@ input, textarea, select, button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
 }
 
-.main .saving .small-photo img {
-  border: 3px solid transparent;
+.main .saving .small-photo:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .saving .small-photo .zoom {
   display: none;
 }
 
-.main .saving .small-photo.active img {
+.main .saving .small-photo.active {
   border-color: #009BF7;
 }
 
@@ -1498,6 +1613,9 @@ input, textarea, select, button,
   height: 545px;
   position: relative;
   margin-top: 50px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
 }
 
 .main .survey .survey-photo img {
@@ -1505,8 +1623,15 @@ input, textarea, select, button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .survey .survey-photo:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .tools {
@@ -1534,6 +1659,9 @@ input, textarea, select, button,
 .main .tools .tools-box .tools-item {
   position: relative;
   max-height: 432px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
 }
 
 .main .tools .tools-box .tools-item span {
@@ -1548,8 +1676,15 @@ input, textarea, select, button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .tools .tools-box .tools-item:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .tools .tools-box .tools-item:nth-child(1) {
@@ -1824,6 +1959,7 @@ input, textarea, select, button,
           border-radius: 20px;
   overflow: hidden;
   position: relative;
+  border-radius: 20px;
 }
 
 .main .projects-box .projects-photo img {
@@ -1831,8 +1967,15 @@ input, textarea, select, button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .projects-box .projects-photo:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main .wrapper-about {
@@ -1968,6 +2111,15 @@ input, textarea, select, button,
   height: 321px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .vacancies-info .info .info-photo img:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .main .wrapper-contact {
@@ -2793,7 +2945,7 @@ input, textarea, select, button,
   .main .map {
     height: 160px;
   }
-  .main .map-img {
+  .main .map-box {
     height: 280px;
     margin-top: -140px;
   }
@@ -2999,6 +3151,13 @@ input, textarea, select, button,
   }
   .main .contact-page .map {
     height: 160px;
+  }
+  .main .wrapper-design {
+    padding: 112px 0 45px;
+  }
+  .main .wrapper-design .wrapper-img {
+    -o-object-position: right;
+       object-position: right;
   }
   .footer {
     padding: 40px 0 15px;

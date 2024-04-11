@@ -670,7 +670,7 @@
     }
     .map {
       height: 160px;
-      &-img {
+      &-box {
         height: 280px;
         margin-top: -140px;
       }
@@ -931,6 +931,13 @@
       }
     }
   
+    
+    .wrapper-design { 
+      padding: 112px 0 45px;
+      .wrapper-img {
+        object-position: right;
+      }
+    }
   }
 
   .footer {

@@ -565,12 +565,18 @@ body {
     .map {
       background: #F7FBFF;
       height: 235px;
-      &-img {
+      &-box {
         width: 100%;
         height: 366px;
         border-radius: 20px;
         object-fit: cover;
         margin-top: -180px;
+        border-radius: 20px;
+        overflow: hidden;
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
 
@@ -662,6 +668,10 @@ body {
         padding: 24px 30px;
         &-bg {
           object-fit: cover;
+          transition: .3s all;
+        }
+        &:hover .smu-card-bg {
+          transform: scale(1.2);
         }
         &__link {
           top: 15px;
@@ -703,11 +713,17 @@ body {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 20px;
+          transition: .3s all;
         }
         .big-photo {
           height: 545px;
           position: relative;
+          border-radius: 20px;
+          overflow: hidden;
+
+          &:hover img {
+            transform: scale(1.3);
+          }
         }
         .small-photos {
           display: grid;
@@ -719,14 +735,18 @@ body {
           position: relative;
           height: 168px;
           cursor: pointer;
-          img {
-            border: 3px solid transparent;
+          border: 3px solid transparent;
+          border-radius: 20px;
+          overflow: hidden;
+
+          &:hover img {
+            transform: scale(1.3);
           }
           .zoom {
             display: none;
           }
         }
-        .small-photo.active img{
+        .small-photo.active{
           border-color: #009BF7;
         }
       }
@@ -750,11 +770,16 @@ body {
         width: 100%;
         height: 545px;
         margin-top: 50px;
+        overflow: hidden;
+        border-radius: 20px;
         img {
           width: 100%;
           height: 100%;
-          border-radius: 20px;
           object-fit: cover;
+          transition: .3s all;
+        }
+        &:hover img {
+          transform: scale(1.3);
         }
       }
       &-box {
@@ -767,10 +792,15 @@ body {
         }
         .apcs-pdf {
           height: 358px;
+          border-radius: 20px;
+          overflow: hidden;
           img {
             width: 100%;
             height: 100%;
-            border-radius: 20px;
+            transition: .3s all;
+          }
+          &:hover img {
+            transform: scale(1.3);
           }
           &__btn {
             position: absolute;
@@ -851,11 +881,16 @@ body {
         width: 100%;
         height: 545px;
         margin-top: 50px;
+        border-radius: 20px;
+        overflow: hidden;
         img {
           width: 100%;
           height: 100%;
-          border-radius: 20px;
           object-fit: cover;
+          transition: .3s all;
+        }
+        &:hover img {
+          transform: scale(1.3);
         }
       }
       &-box {
@@ -869,10 +904,15 @@ body {
         .diagnostics-pdf {
           height: 358px;
           width: 49%;
+          border-radius: 20px;
+          overflow: hidden;
           img {
             width: 100%;
             height: 100%;
-            border-radius: 20px;
+            transition: .3s all;
+          }
+          &:hover img {
+            transform: scale(1.3);
           }
           &__btn {
             position: absolute;
@@ -932,11 +972,16 @@ body {
         .connection-photo {
           width: 49%;
           height: 545px;
+          border-radius: 20px;
+          overflow: hidden;
           img {
             width: 100%;
             height: 100%;
-            border-radius: 20px;
             object-fit: cover;
+            transition: .3s all;
+          } 
+          &:hover img {
+            transform: scale(1.3);
           }
         }
       }
@@ -980,6 +1025,12 @@ body {
         overflow: hidden;
         padding: 30px;
         overflow: hidden;
+        .saving-card-img {
+          transition: .3s all;
+        }
+        &:hover .saving-card-img {
+          transform: scale(1.3);
+        }
         &-bg {
           object-fit: cover;
         }
@@ -1033,7 +1084,13 @@ body {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 20px;
+          transition: .3s all;
+        }
+        border-radius: 20px;
+        overflow: hidden;
+
+        &:hover img {
+          transform: scale(1.3);
         }
       }
       .small-photos {
@@ -1046,20 +1103,24 @@ body {
         position: relative;
         height: 178px;
         cursor: pointer;
+        border: 3px solid transparent;
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 20px;
+          transition: .3s all;
         }
-        img {
-          border: 3px solid transparent;
+        border-radius: 20px;
+        overflow: hidden;
+
+        &:hover img {
+          transform: scale(1.3);
         }
         .zoom {
           display: none;
         }
       }
-      .small-photo.active img{
+      .small-photo.active{
         border-color: #009BF7;
       }
     }
@@ -1118,11 +1179,16 @@ body {
         height: 545px;
         position: relative;
         margin-top: 50px;
+        border-radius: 20px;
+        overflow: hidden;
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 20px;
+          transition: .3s all;
+        } 
+        &:hover img {
+          transform: scale(1.3);
         }
       }
     }
@@ -1145,6 +1211,8 @@ body {
         .tools-item {
           position: relative;
           max-height: 432px;
+          border-radius: 20px;
+          overflow: hidden;
           span {
             position: absolute;
             top: 15px;
@@ -1155,7 +1223,10 @@ body {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 20px;
+            transition: .3s all;
+          }
+          &:hover img {
+            transform: scale(1.3);
           }
           &:nth-child(1) {
             grid-column-start: 1;
@@ -1377,11 +1448,15 @@ body {
           border-radius: 20px;
           overflow: hidden;
           position: relative;
+          border-radius: 20px;
           img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 20px;
+            transition: .3s all;
+          } 
+          &:hover img {
+            transform: scale(1.3);
           }
         }
       }
@@ -1503,6 +1578,10 @@ body {
             width: 49.5%;
             height: 321px;
             object-fit: cover;
+            transition: .3s all;
+            &:hover {
+              transform: scale(1.05);
+            }
           }
         }
       }
