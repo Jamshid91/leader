@@ -216,7 +216,7 @@ input, textarea, select, button,
 }
 
 .header .connect-with-us:hover {
-  background: #051A43;
+  background: #072C6D;
 }
 
 .header .menu-btn {
@@ -385,6 +385,7 @@ input, textarea, select, button,
   line-height: 19px;
   color: #072C6D;
   margin: 0 12px 12px 0;
+  border: 1px solid transparent;
 }
 
 .main .info-card-link span {
@@ -396,7 +397,7 @@ input, textarea, select, button,
 }
 
 .main .info-card-link:hover {
-  background: #fff9;
+  border-color: #009BF7;
 }
 
 .main .geography {
@@ -469,142 +470,6 @@ input, textarea, select, button,
   background: #fff;
   padding: 40px 46px 34px;
   margin-top: 40px;
-}
-
-.main .contactUs .input-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 34px;
-}
-
-.main .contactUs .input-box:last-child {
-  margin-bottom: 0;
-}
-
-.main .contactUs .input-box label {
-  font-size: 16px;
-  line-height: 19px;
-  color: #4B4F60;
-  margin-bottom: 12px;
-}
-
-.main .contactUs .input-box input,
-.main .contactUs .input-box textarea {
-  width: 100%;
-  height: 47px;
-  -webkit-border-radius: 50px;
-          border-radius: 50px;
-  background: #F3F6F9;
-  border: 1px solid #4B4F6014;
-  padding: 12px;
-  font-size: 16px;
-  line-height: 19px;
-  color: #051A43;
-}
-
-.main .contactUs .input-box input::-webkit-input-placeholder,
-.main .contactUs .input-box textarea::-webkit-input-placeholder {
-  color: #4B4F6099;
-}
-
-.main .contactUs .input-box input:-ms-input-placeholder,
-.main .contactUs .input-box textarea:-ms-input-placeholder {
-  color: #4B4F6099;
-}
-
-.main .contactUs .input-box input::-ms-input-placeholder,
-.main .contactUs .input-box textarea::-ms-input-placeholder {
-  color: #4B4F6099;
-}
-
-.main .contactUs .input-box input::placeholder,
-.main .contactUs .input-box textarea::placeholder {
-  color: #4B4F6099;
-}
-
-.main .contactUs .input-box input:focus,
-.main .contactUs .input-box textarea:focus {
-  border-color: #008FE5;
-}
-
-.main .contactUs .input-box textarea {
-  height: 118px;
-  -webkit-border-radius: 23px;
-          border-radius: 23px;
-  resize: none;
-}
-
-.main .contactUs .check-box input[type="checkbox"] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  min-width: 24px;
-  margin-right: 16px;
-  margin-top: 3px;
-  height: 24px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  border: 1px solid #009BF7;
-  cursor: pointer;
-  position: relative;
-}
-
-.main .contactUs .check-box input[type="checkbox"]::before {
-  content: url(../img/svg/icon-checkbox.svg);
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  display: none;
-}
-
-.main .contactUs .check-box input[type="checkbox"]:checked::before {
-  display: block;
-}
-
-.main .contactUs .check-box p {
-  font-size: 12px;
-  line-height: 14px;
-  color: #4B4F60;
-}
-
-.main .contactUs .form-box {
-  width: 49%;
-}
-
-.main .contactUs .form-box:last-child .input-box {
-  margin-bottom: 24px;
-}
-
-.main .contactUs .form__submit {
-  width: 100%;
-  height: 55px;
-  -webkit-border-radius: 50px;
-          border-radius: 50px;
-  background: #051A43;
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #fff;
-  font-family: 'NeutralFace', sans-serif;
-  position: relative;
-}
-
-.main .contactUs .form__submit img {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-}
-
-.main .contactUs .form__submit:hover {
-  background: #008FE5;
 }
 
 .main .vacancies .title-text {
@@ -1351,14 +1216,39 @@ input, textarea, select, button,
           transform: scale(1.3);
 }
 
-.main .wrapper-design,
+.main .wrapper-design {
+  padding: 180px 0 50px;
+}
+
+.main .wrapper-design .wrapper-img {
+  height: 100%;
+  right: 15%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .main .wrapper-survey {
   padding: 180px 0 50px;
 }
 
-.main .wrapper-design .wrapper-img,
 .main .wrapper-survey .wrapper-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  right: 15%;
+}
+
+.main .wrapper-cmp {
+  padding: 180px 0 50px;
+}
+
+.main .wrapper-cmp .wrapper-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
   width: 100%;
+  height: 100%;
+  right: 0;
 }
 
 .main .wrapper-saving {
@@ -1376,6 +1266,15 @@ input, textarea, select, button,
   background: #051A4333;
   border: 1px solid #009BF769;
   margin-bottom: 5px;
+}
+
+.main .wrapper-saving .wrapper-img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  right: 0;
+  -o-object-position: right;
+     object-position: right;
 }
 
 .main .saving {
@@ -2136,6 +2035,150 @@ input, textarea, select, button,
   height: 200px;
 }
 
+.contactUs-form {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  background: #fff;
+  padding: 40px 46px 34px;
+  margin-top: 40px;
+}
+
+.contactUs-form .input-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 34px;
+}
+
+.contactUs-form .input-box:last-child {
+  margin-bottom: 0;
+}
+
+.contactUs-form .input-box label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #4B4F60;
+  margin-bottom: 12px;
+}
+
+.contactUs-form .input-box input,
+.contactUs-form .input-box textarea {
+  width: 100%;
+  height: 47px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  background: #F3F6F9;
+  border: 1px solid #4B4F6014;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #051A43;
+}
+
+.contactUs-form .input-box input::-webkit-input-placeholder,
+.contactUs-form .input-box textarea::-webkit-input-placeholder {
+  color: #4B4F6099;
+}
+
+.contactUs-form .input-box input:-ms-input-placeholder,
+.contactUs-form .input-box textarea:-ms-input-placeholder {
+  color: #4B4F6099;
+}
+
+.contactUs-form .input-box input::-ms-input-placeholder,
+.contactUs-form .input-box textarea::-ms-input-placeholder {
+  color: #4B4F6099;
+}
+
+.contactUs-form .input-box input::placeholder,
+.contactUs-form .input-box textarea::placeholder {
+  color: #4B4F6099;
+}
+
+.contactUs-form .input-box input:focus,
+.contactUs-form .input-box textarea:focus {
+  border-color: #008FE5;
+}
+
+.contactUs-form .input-box textarea {
+  height: 118px;
+  -webkit-border-radius: 23px;
+          border-radius: 23px;
+  resize: none;
+}
+
+.contactUs-form .check-box input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  min-width: 24px;
+  margin-right: 16px;
+  margin-top: 3px;
+  height: 24px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: 1px solid #009BF7;
+  cursor: pointer;
+  position: relative;
+}
+
+.contactUs-form .check-box input[type="checkbox"]::before {
+  content: url(../img/svg/icon-checkbox.svg);
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  display: none;
+}
+
+.contactUs-form .check-box input[type="checkbox"]:checked::before {
+  display: block;
+}
+
+.contactUs-form .check-box p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #4B4F60;
+}
+
+.contactUs-form .form-box {
+  width: 49%;
+}
+
+.contactUs-form .form-box:last-child .input-box {
+  margin-bottom: 24px;
+}
+
+.contactUs-form .form__submit {
+  width: 100%;
+  height: 55px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  background: #051A43;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'NeutralFace', sans-serif;
+  position: relative;
+}
+
+.contactUs-form .form__submit img {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.contactUs-form .form__submit:hover {
+  background: #008FE5;
+}
+
 .footer {
   padding: 45px 0 20px;
   background: #F7FBFF;
@@ -2208,7 +2251,7 @@ input, textarea, select, button,
   z-index: 99;
 }
 
-.popUp__close {
+.popUp-close {
   position: absolute;
   top: -40px;
   right: 0;
@@ -2219,7 +2262,7 @@ input, textarea, select, button,
   height: 34px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background: #D0D0D0;
+  background: #0079C1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2234,15 +2277,18 @@ input, textarea, select, button,
           justify-content: center;
 }
 
-.popUp__close:hover svg {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+.popUp-close:hover {
+  background: #072C6D;
 }
 
 .popUp-content {
   -webkit-animation: popUp-anim 0.5s linear;
           animation: popUp-anim 0.5s linear;
+  width: 95%;
+}
+
+.popUp-content form {
+  margin: 0;
 }
 
 .popUpHide {
@@ -2379,6 +2425,13 @@ input, textarea, select, button,
     width: 70%;
     right: -20%;
   }
+  .main .wrapper-smu .wrapper-img {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .main .wrapper-apcs .wrapper-img {
     right: 0;
   }
@@ -2429,23 +2482,17 @@ input, textarea, select, button,
     padding: 180px 0 50px;
   }
   .main .wrapper-design .wrapper-img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    right: 0;
+    right: -15%;
+    width: auto;
   }
   .main .wrapper-survey {
     padding: 180px 0 50px;
   }
   .main .wrapper-survey .wrapper-img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: right;
-       object-position: right;
-    right: 0;
+    width: 260px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    right: -90px;
   }
   .main .tools .tools-box {
     grid-gap: 10px;
@@ -2671,23 +2718,6 @@ input, textarea, select, button,
     margin: 30px 0;
     padding: 30px 0 24px;
   }
-  .main .contactUs-form {
-    padding: 20px 12px 12px;
-    margin-top: 24px;
-  }
-  .main .contactUs .input-box {
-    margin-bottom: 24px;
-  }
-  .main .contactUs .check-box p {
-    font-size: 11px;
-    line-height: 12px;
-  }
-  .main .contactUs .form-box {
-    width: 100%;
-  }
-  .main .contactUs .form-box:last-child .input-box {
-    margin-top: 24px;
-  }
   .main .vacancies {
     padding-bottom: 109px;
     position: relative;
@@ -2783,7 +2813,13 @@ input, textarea, select, button,
     padding: 109px 0 48px;
   }
   .main .wrapper-diagnostics .wrapper-img {
-    right: -20%;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
   }
   .main .diagnostics .info-title,
   .main .design .info-title {
@@ -2924,6 +2960,23 @@ input, textarea, select, button,
     min-width: 50%;
     margin-right: 0;
   }
+  .contactUs-form {
+    padding: 20px 12px 12px;
+    margin-top: 24px;
+  }
+  .contactUs-form .input-box {
+    margin-bottom: 24px;
+  }
+  .contactUs-form .check-box p {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .contactUs-form .form-box {
+    width: 100%;
+  }
+  .contactUs-form .form-box:last-child .input-box {
+    margin-top: 24px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2949,20 +3002,15 @@ input, textarea, select, button,
     height: 280px;
     margin-top: -140px;
   }
-  .main .wrapper-smu .wrapper-img {
-    width: 110%;
-    right: -20%;
-  }
   .main .wrapper-saving {
     padding: 90px 0 30px;
-  }
-  .main .wrapper-saving .wrapper-img {
-    width: 90%;
-    right: -50%;
   }
   .main .wrapper-saving .wrapper-suptitle {
     font-size: 11px;
     line-height: 13px;
+  }
+  .main .wrapper-saving .wrapper-title {
+    width: 75%;
   }
   .main .smu-box {
     -ms-grid-columns: (1fr)[1];
@@ -3079,12 +3127,12 @@ input, textarea, select, button,
     width: 211px;
     top: 5%;
   }
+  .main .saving-card:nth-child(2) .saving-card-img {
+    top: 20px;
+    width: 270px;
+  }
   .main .saving-card:nth-child(3) .saving-card-img {
     width: 260px;
-    -webkit-transform: rotate(-15deg);
-        -ms-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-    bottom: -25px;
   }
   .main .wrapper-survey {
     padding: 112px 0 45px;
@@ -3156,8 +3204,14 @@ input, textarea, select, button,
     padding: 112px 0 45px;
   }
   .main .wrapper-design .wrapper-img {
-    -o-object-position: right;
-       object-position: right;
+    width: 230px;
+    right: -120px;
+  }
+  .main .wrapper-cmp {
+    padding: 100px 0 18px;
+  }
+  .main .wrapper-cmp .wrapper-title {
+    width: 75%;
   }
   .footer {
     padding: 40px 0 15px;

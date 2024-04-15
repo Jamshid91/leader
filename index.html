@@ -48,10 +48,10 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                    </div>
-                    <a href="#" class="connect-with-us d-none d-lg-flex justify-content-center align-items-center">
+                    <button class="connect-with-us d-none d-lg-flex justify-content-center align-items-center">
                         <span>Связаться с нами</span>
                         <img src="assets/img/svg/arrow.svg" alt="">
-                    </a>
+                    </button>
                     <div class="menu-btn d-lg-none">
                         <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M28.75 12.5834H1.25C0.56 12.5834 0 12.0234 0 11.3334C0 10.6434 0.56 10.0834 1.25 10.0834H28.75C29.44 10.0834 30 10.6434 30 11.3334C30 12.0234 29.44 12.5834 28.75 12.5834ZM28.75 3H1.25C0.56 3 0 2.44 0 1.75C0 1.06 0.56 0.5 1.25 0.5H28.75C29.44 0.5 30 1.06 30 1.75C30 2.44 29.44 3 28.75 3ZM28.75 22.1666H1.25C0.56 22.1666 0 21.6066 0 20.9166C0 20.2266 0.56 19.6666 1.25 19.6666H28.75C29.44 19.6666 30 20.2266 30 20.9166C30 21.6066 29.44 22.1666 28.75 22.1666Z" fill="white"/>
@@ -200,7 +200,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12"><img src="assets/img/png/russia.png" alt="" class="geography-img"></div>
+                    <div class="col-12">
+                        <img src="assets/img/svg/map.svg" alt="" class="geography-img d-none d-md-block">
+                        <img src="assets/img/svg/map2.svg" alt="" class="geography-img d-md-none">
+                    </div>
                 </div>
             </div>
         </div>
@@ -417,6 +420,49 @@
         </div>
     </footer>
 
+    <div class="popUp popUp-contactUs d-none">
+        <div class="popUp-content position-relative ">
+            <button class="popUp-close">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form action="#" class="contactUs-form d-flex justify-content-between flex-wrap">
+                <div class="form-box">
+                    <div class="input-box">
+                        <label for="name">ФИО</label>
+                        <input type="text" id="name" placeholder="Например:Иванов Иван Иванович" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Номер телефона</label>
+                        <input type="text" id="phone" placeholder="+7" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="pochta@pochta.ru" required>
+                    </div>
+                </div>
+                <div class="form-box d-flex flex-column justify-content-between">
+                    <div class="">
+                        <div class="input-box">
+                            <label for="message">Вид интересующих работ</label>
+                            <textarea id="message" placeholder="Например: строительство" required></textarea>
+                        </div>
+                        <div class="check-box d-flex align-items-start">
+                            <input type="checkbox" required checked>
+                            <p>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных *</p>
+                        </div>
+                    </div>
+                    <button class="form__submit">Отправить
+                        <img src="assets/img/svg/arrow.svg" alt="">
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
     <script src="assets/js/header.js"></script>
+    <script src="assets/js/popUp.js"></script>
 </body>
 </html>

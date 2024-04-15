@@ -282,6 +282,48 @@
         <img src="assets/img/png/m1.png" alt="" class="zoom-photo">
     </div>
 
+    <div class="popUp popUp-contactUs d-none">
+        <div class="popUp-content position-relative ">
+            <button class="popUp-close">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <form action="#" class="contactUs-form d-flex justify-content-between flex-wrap">
+                <div class="form-box">
+                    <div class="input-box">
+                        <label for="name">ФИО</label>
+                        <input type="text" id="name" placeholder="Например:Иванов Иван Иванович" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Номер телефона</label>
+                        <input type="text" id="phone" placeholder="+7" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="pochta@pochta.ru" required>
+                    </div>
+                </div>
+                <div class="form-box d-flex flex-column justify-content-between">
+                    <div class="">
+                        <div class="input-box">
+                            <label for="message">Вид интересующих работ</label>
+                            <textarea id="message" placeholder="Например: строительство" required></textarea>
+                        </div>
+                        <div class="check-box d-flex align-items-start">
+                            <input type="checkbox" required checked>
+                            <p>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных *</p>
+                        </div>
+                    </div>
+                    <button class="form__submit">Отправить
+                        <img src="assets/img/svg/arrow.svg" alt="">
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
     <script src="assets/js/header.js"></script>
     <script src="assets/js/zoom.js"></script>
     <script src="assets/js/popUp.js"></script>
