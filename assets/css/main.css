@@ -419,6 +419,35 @@ input, textarea, select, button,
      object-fit: contain;
 }
 
+.main .geography .location {
+  position: absolute;
+  width: 178px;
+  height: 51px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background: #fff;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 35%;
+  left: 13%;
+  padding: 3px;
+  line-height: 19px;
+  display: none;
+}
+
+.main .geography .location img {
+  margin-right: 3px;
+}
+
+.main .geography-box:hover .location {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .main .about-link {
   width: 204px;
   height: 55px;
@@ -2035,6 +2064,44 @@ input, textarea, select, button,
   height: 200px;
 }
 
+.main .krIt {
+  margin-bottom: 48px;
+}
+
+.main .krIt-item {
+  width: 49%;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main .krIt-item img {
+  width: 100%;
+  height: 545px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .krIt-item img:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.main .wrapper-krIt {
+  padding: 195px 0 50px;
+}
+
+.main .wrapper-krIt .wrapper-img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .contactUs-form {
   -webkit-border-radius: 20px;
           border-radius: 20px;
@@ -2521,6 +2588,15 @@ input, textarea, select, button,
        object-fit: cover;
     width: auto;
   }
+  .main .wrapper-krIt {
+    padding: 195px 0 50px;
+  }
+  .main .wrapper-krIt .wrapper-img {
+    right: -7%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2696,6 +2772,15 @@ input, textarea, select, button,
     min-width: 350px;
     height: 350px;
     margin-right: 12px;
+  }
+  .main .krIt-item img {
+    height: 400px;
+  }
+  .main .wrapper-krIt {
+    padding: 112px 0 45px;
+  }
+  .main .wrapper-krIt .wrapper-img {
+    right: 0;
   }
 }
 
@@ -2960,6 +3045,22 @@ input, textarea, select, button,
     min-width: 50%;
     margin-right: 0;
   }
+  .main .krIt {
+    margin-bottom: 33px;
+  }
+  .main .krIt .container {
+    padding-right: 0;
+  }
+  .main .krIt-box {
+    overflow-x: scroll;
+  }
+  .main .krIt-item {
+    min-width: 327px;
+    margin-right: 10px;
+  }
+  .main .krIt-item img {
+    height: 327px;
+  }
   .contactUs-form {
     padding: 20px 12px 12px;
     margin-top: 24px;
@@ -3025,7 +3126,7 @@ input, textarea, select, button,
   .main .info-box {
     margin-top: 30px;
     padding: 18px;
-    margin-right: 16px;
+    margin-right: 0;
   }
   .main .info-box .info-item li {
     font-size: 13px;
@@ -3212,6 +3313,21 @@ input, textarea, select, button,
   }
   .main .wrapper-cmp .wrapper-title {
     width: 75%;
+  }
+  .main .wrapper-krIt .wrapper-img {
+    right: -10%;
+    -o-object-position: right;
+       object-position: right;
+    width: auto;
+  }
+  .main .geography .location {
+    width: 110px;
+    height: 30px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .main .geography .location img {
+    width: 12px;
   }
   .footer {
     padding: 40px 0 15px;

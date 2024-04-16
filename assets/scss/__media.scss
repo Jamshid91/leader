@@ -178,6 +178,15 @@
         width: auto;
       }
     }
+
+    .wrapper-krIt {
+      padding: 195px 0 50px;
+      .wrapper-img {
+        right: -7%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 
@@ -364,6 +373,21 @@
           height: 350px;
           margin-right: 12px;
         }
+      }
+    }
+
+    .krIt {
+      &-item {
+        img {
+          height: 400px;
+        }
+      }
+    }
+
+    .wrapper-krIt {
+      padding: 112px 0 45px;
+      .wrapper-img {
+        right: 0;
       }
     }
   }
@@ -631,6 +655,22 @@
         margin-right: 0;
       }
     }
+    .krIt {
+      margin-bottom: 33px;
+      .container {
+        padding-right: 0;
+      }
+      &-box {
+        overflow-x: scroll;
+      }
+      &-item {
+        min-width: 327px;
+        margin-right: 10px;
+        img {
+          height: 327px;
+        }
+      }
+    }
   }
   .contactUs-form {
     padding: 20px 12px 12px;
@@ -713,7 +753,7 @@
     .info-box {
       margin-top: 30px;
       padding: 18px;
-      margin-right: 16px;
+      margin-right: 0;
       .info-item {
         li {
           font-size: 13px;
@@ -950,6 +990,26 @@
       padding: 100px 0 18px;
       .wrapper-title {
         width: 75%;
+      }
+    }
+
+    .wrapper-krIt {
+      .wrapper-img {
+        right: -10%;
+        object-position: right;
+        width: auto;
+      }
+    }
+    
+    .geography {
+      .location {
+        width: 110px;
+        height: 30px;
+        font-size: 10px;
+        line-height: 10px;
+        img {
+          width: 12px;
+        }
       }
     }
   }
