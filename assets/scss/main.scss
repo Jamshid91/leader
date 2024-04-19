@@ -1767,6 +1767,23 @@ body {
       }
     }
   }
+  .popUp-thanks .popUp-content {
+    width: 347px;
+    height: 180px;
+    border-radius: 20px;
+    background: #fff;
+    color: #051A43;
+  }
+  .popUp-title {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 500;
+  }
+  .popUp-subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 16px;
+  }
   .popUpHide {
     animation: popUp-anim-hide 0.5s linear !important;
   }

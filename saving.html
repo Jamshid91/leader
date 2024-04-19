@@ -264,7 +264,7 @@
                             <p>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных *</p>
                         </div>
                     </div>
-                    <button class="form__submit">Отправить
+                    <button class="form__submit" type="button">Отправить
                         <img src="assets/img/svg/arrow.svg" alt="">
                     </button>
                 </div>
@@ -272,6 +272,18 @@
             </form>
         </div>
     </div>
+
+      <div class="popUp popUp-thanks d-none">
+        <div class="popUp-content position-relative d-flex flex-column align-items-center justify-content-center">
+            <button class="popUp-close">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <h6 class="popUp-title">Спасибо!</h6>
+            <p class="popUp-subtitle">Ваша заявка отправлена</p>
+        </div>
+      </div>
 
     <script src="assets/js/header.js"></script>
     <script src="assets/js/check-photos.js"></script>
