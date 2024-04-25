@@ -212,6 +212,12 @@
       font-size: 28px;
       line-height: 33px;
     }
+
+    .geography {
+      svg {
+        width: 100%;
+      }
+    }
     
     .wrapper {
       padding: 112px 0 103px;
@@ -707,10 +713,23 @@
   .main {
     .geography {
       margin: 30px 0;
-      padding: 34px 0 26px;
+      padding: 45px 0 16px;
       .title-text {
-        position: relative;
-        left: 0;
+        top: 16px;
+      }
+      .location {
+        padding: 4px 2px;
+        max-width: 415px;
+        position: absolute;
+        opacity: 0;
+        .name {
+          font-size: 8px;
+          line-height: 9px;
+        }
+        .address {
+          font-size: 8px;
+          line-height: 9px;
+        }
       }
     }
     .contacts {

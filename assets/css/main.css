@@ -403,49 +403,57 @@ input, textarea, select, button,
 .main .geography {
   background: #F7FBFF;
   margin: 50px 0 85px;
-  padding: 34px 0 26px;
 }
 
 .main .geography .title-text {
   position: absolute;
-  top: 0;
-  left: 24px;
-  width: 270px;
+  left: 16px;
+  top: 38px;
+  z-index: 4;
 }
 
-.main .geography-img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+.main .geography svg {
+  height: auto;
+}
+
+.main .geography svg .locIcon {
+  cursor: pointer;
+}
+
+.main .geography svg .locIcon:hover path:first-child {
+  fill: #003cab;
+}
+
+.main .geography svg .locIcon:hover path:last-child {
+  display: none !important;
 }
 
 .main .geography .location {
-  position: absolute;
-  width: 178px;
-  height: 51px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
   background: #fff;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 35%;
-  left: 13%;
-  padding: 3px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  color: #4B4F60;
+  -webkit-box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+  padding: 11px 6px;
+  max-width: 415px;
+  position: absolute;
+  opacity: 0;
+}
+
+.main .geography .location .name {
+  font-size: 16px;
   line-height: 19px;
-  display: none;
 }
 
-.main .geography .location img {
-  margin-right: 3px;
+.main .geography .location .address {
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 4px;
 }
 
-.main .geography-box:hover .location {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.main .geography .location .address span {
+  margin-right: 5px;
 }
 
 .main .about-link {
@@ -2637,6 +2645,9 @@ input, textarea, select, button,
     font-size: 28px;
     line-height: 33px;
   }
+  .main .geography svg {
+    width: 100%;
+  }
   .main .wrapper {
     padding: 112px 0 103px;
   }
@@ -3107,11 +3118,24 @@ input, textarea, select, button,
   }
   .main .geography {
     margin: 30px 0;
-    padding: 34px 0 26px;
+    padding: 45px 0 16px;
   }
   .main .geography .title-text {
-    position: relative;
-    left: 0;
+    top: 16px;
+  }
+  .main .geography .location {
+    padding: 4px 2px;
+    max-width: 415px;
+    position: absolute;
+    opacity: 0;
+  }
+  .main .geography .location .name {
+    font-size: 8px;
+    line-height: 9px;
+  }
+  .main .geography .location .address {
+    font-size: 8px;
+    line-height: 9px;
   }
   .main .contacts {
     margin: 0;
