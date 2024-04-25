@@ -421,7 +421,7 @@ input, textarea, select, button,
 }
 
 .main .geography svg .locIcon:hover path:first-child {
-  fill: #003cab;
+  fill: #224DE8;
 }
 
 .main .geography svg .locIcon:hover path:last-child {
