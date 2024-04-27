@@ -32,7 +32,7 @@ const locAdd = document.querySelector('.location .address-text');
         e.addEventListener('click', function() {
             locName.textContent = e.dataset.name;
             locAdd.textContent = e.dataset.address;
-            loc.style.display = 'flex'
+            loc.classList.add('d-flex')
         });
     })
   }
