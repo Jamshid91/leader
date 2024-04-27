@@ -2,7 +2,8 @@ const locIcons = document.querySelectorAll('.locIcon');
 const loc = document.querySelector('.location');
 const locName = document.querySelector('.location .name');
 const locAdd = document.querySelector('.location .address-text');
-const locAddLast = document.querySelector('.location .last-text');
+const locnameLast = document.querySelector('.location .namelast');
+const locAddLast = document.querySelector('.location .addlast');
 
 
 locIcons.forEach(e => {
@@ -18,7 +19,8 @@ locIcons.forEach(e => {
         }
         locName.textContent = e.dataset.name;
         locAdd.textContent = e.dataset.address;
-        locAddLast.textContent = e.dataset.last;
+        locnameLast.textContent = e.dataset.namelast;
+        locAddLast.textContent = e.dataset.addlast;
 
         loc.style.opacity = 1
     });

@@ -445,10 +445,10 @@ input, textarea, select, button,
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   pointer-events: none;
   position: absolute;
   background: white;
@@ -456,20 +456,24 @@ input, textarea, select, button,
   z-index: 5;
 }
 
-.main .geography .location .name {
+.main .geography .location .name, .main .geography .location .namelast {
   font-size: 16px;
   line-height: 19px;
 }
 
+.main .geography .location .namelast {
+  margin-top: 8px;
+}
+
 .main .geography .location .address,
-.main .geography .location .last-text {
+.main .geography .location .addlast {
   font-size: 12px;
   line-height: 14px;
   margin-top: 4px;
 }
 
 .main .geography .location .address span,
-.main .geography .location .last-text span {
+.main .geography .location .addlast span {
   margin-right: 5px;
 }
 
