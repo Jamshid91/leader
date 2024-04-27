@@ -10,8 +10,8 @@ locIcons.forEach(e => {
             x=event.clientX
             y=event.clientY
 
-            loc.style.left = x-30+'px'
-            loc.style.top = y-30+'px'
+            loc.style.left = x-50+'px'
+            loc.style.top = y+70+'px'
         }
         locName.textContent = e.dataset.name;
             locAdd.textContent = e.dataset.address;
