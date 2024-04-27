@@ -3134,6 +3134,15 @@ input, textarea, select, button,
             border-bottom-left-radius: 20px;
     opacity: 1;
     display: none;
+    margin-left: 10px;
+  }
+  .main .geography .location .name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .main .geography .location .address {
+    font-size: 10px;
+    line-height: 12px;
   }
   .contactUs-form {
     padding: 20px 12px 12px;
