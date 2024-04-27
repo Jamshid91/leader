@@ -405,6 +405,11 @@ input, textarea, select, button,
   margin: 50px 0 85px;
 }
 
+.main .geography .container {
+  max-width: 1400px;
+  padding-right: 0;
+}
+
 .main .geography .title-text {
   position: absolute;
   left: 16px;
@@ -429,7 +434,6 @@ input, textarea, select, button,
 }
 
 .main .geography .location {
-  background: #fff;
   -webkit-border-radius: 20px;
           border-radius: 20px;
   color: #4B4F60;
@@ -437,7 +441,6 @@ input, textarea, select, button,
           box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
   padding: 11px 6px;
   max-width: 415px;
-  position: absolute;
   opacity: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -447,6 +450,11 @@ input, textarea, select, button,
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  pointer-events: none;
+  position: absolute;
+  background: white;
+  padding: 10px 15px;
+  z-index: 5;
 }
 
 .main .geography .location .name {
@@ -3105,6 +3113,9 @@ input, textarea, select, button,
     background: #F7FBFF;
     margin: 50px 0 85px;
   }
+  .main .geography .container {
+    padding-top: 50px;
+  }
   .main .geography .title-text {
     position: absolute;
     left: 16px;
@@ -3124,25 +3135,7 @@ input, textarea, select, button,
     display: none;
   }
   .main .geography .location {
-    width: 100% !important;
-    position: relative;
-    -webkit-border-radius: 0;
-            border-radius: 0;
-    -webkit-border-top-left-radius: 20px;
-            border-top-left-radius: 20px;
-    -webkit-border-bottom-left-radius: 20px;
-            border-bottom-left-radius: 20px;
-    opacity: 1;
-    display: none;
-    margin-left: 10px;
-  }
-  .main .geography .location .name {
-    font-size: 14px;
-    line-height: 16px;
-  }
-  .main .geography .location .address {
-    font-size: 10px;
-    line-height: 12px;
+    display: none !important;
   }
   .contactUs-form {
     padding: 20px 12px 12px;
@@ -3169,7 +3162,6 @@ input, textarea, select, button,
   }
   .main .geography {
     margin: 30px 0;
-    padding: 45px 0 16px;
   }
   .main .geography .title-text {
     top: 16px;

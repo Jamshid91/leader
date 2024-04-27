@@ -681,6 +681,9 @@
     .geography {
       background: #F7FBFF;
       margin: 50px 0 85px;
+      .container {
+        padding-top: 50px;
+      }
       .title-text {
         position: absolute;
         left: 16px;
@@ -704,22 +707,7 @@
         }
       }
       .location {
-        width: 100% !important;
-        position: relative;
-        border-radius: 0;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        opacity: 1;
-        display: none;
-        margin-left: 10px;
-        .name {
-          font-size: 14px;
-          line-height: 16px;
-        }
-        .address {
-          font-size: 10px;
-          line-height: 12px;
-        }
+        display: none !important;
       }
     }
 
@@ -759,7 +747,6 @@
   .main {
     .geography {
       margin: 30px 0;
-      padding: 45px 0 16px;
       .title-text {
         top: 16px;
       }
