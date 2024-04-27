@@ -307,11 +307,11 @@ body {
           cursor: pointer;
           &:hover {
             path {
-              &:first-child {
-                fill: #224DE8;
+              &:nth-child(1) {
+                fill: #204EF0;
               }
-              &:last-child {
-                display: none !important;
+              &:nth-child(2), &:nth-child(3),&:nth-child(4),&:nth-child(5) {
+                display: none;
               }
             }
           }
@@ -326,6 +326,8 @@ body {
         max-width: 415px;
         position: absolute;
         opacity: 0;
+        display: flex;
+        align-items: center;
         .name {
           font-size: 16px;
           line-height: 19px;

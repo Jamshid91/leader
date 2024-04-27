@@ -420,12 +420,12 @@ input, textarea, select, button,
   cursor: pointer;
 }
 
-.main .geography svg .locIcon:hover path:first-child {
-  fill: #224DE8;
+.main .geography svg .locIcon:hover path:nth-child(1) {
+  fill: #204EF0;
 }
 
-.main .geography svg .locIcon:hover path:last-child {
-  display: none !important;
+.main .geography svg .locIcon:hover path:nth-child(2), .main .geography svg .locIcon:hover path:nth-child(3), .main .geography svg .locIcon:hover path:nth-child(4), .main .geography svg .locIcon:hover path:nth-child(5) {
+  display: none;
 }
 
 .main .geography .location {
@@ -439,6 +439,14 @@ input, textarea, select, button,
   max-width: 415px;
   position: absolute;
   opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .geography .location .name {
@@ -3093,6 +3101,40 @@ input, textarea, select, button,
   .main .krIt-item img {
     height: 327px;
   }
+  .main .geography {
+    background: #F7FBFF;
+    margin: 50px 0 85px;
+  }
+  .main .geography .title-text {
+    position: absolute;
+    left: 16px;
+    top: 38px;
+    z-index: 4;
+  }
+  .main .geography svg {
+    height: auto;
+  }
+  .main .geography svg .locIcon {
+    cursor: pointer;
+  }
+  .main .geography svg .locIcon:hover path:nth-child(1) {
+    fill: #204EF0;
+  }
+  .main .geography svg .locIcon:hover path:nth-child(2), .main .geography svg .locIcon:hover path:nth-child(3), .main .geography svg .locIcon:hover path:nth-child(4), .main .geography svg .locIcon:hover path:nth-child(5) {
+    display: none;
+  }
+  .main .geography .location {
+    width: 100% !important;
+    position: relative;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    -webkit-border-top-left-radius: 20px;
+            border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+    opacity: 1;
+    display: none;
+  }
   .contactUs-form {
     padding: 20px 12px 12px;
     margin-top: 24px;
@@ -3122,20 +3164,6 @@ input, textarea, select, button,
   }
   .main .geography .title-text {
     top: 16px;
-  }
-  .main .geography .location {
-    padding: 4px 2px;
-    max-width: 415px;
-    position: absolute;
-    opacity: 0;
-  }
-  .main .geography .location .name {
-    font-size: 8px;
-    line-height: 9px;
-  }
-  .main .geography .location .address {
-    font-size: 8px;
-    line-height: 9px;
   }
   .main .contacts {
     margin: 0;
@@ -3364,15 +3392,6 @@ input, textarea, select, button,
     -o-object-position: right;
        object-position: right;
     width: auto;
-  }
-  .main .geography .location {
-    width: 110px;
-    height: 30px;
-    font-size: 10px;
-    line-height: 10px;
-  }
-  .main .geography .location img {
-    width: 12px;
   }
   .footer {
     padding: 40px 0 15px;
